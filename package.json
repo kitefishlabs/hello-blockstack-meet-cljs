@@ -1,0 +1,26 @@
+{
+  "scripts": {
+    "dev": "shadow-cljs watch app",
+    "repl": "shadow-cljs cljs-repl app",
+    "release": "shadow-cljs release app",
+    "server": "shadow-cljs server",
+    "clean": "rm -rf target && rm -rf public/js",
+    "clean-win": "rmdir /s /q public/js & rmdir /s /q target"
+  },
+  "dependencies": {
+    "blockstack": "^18.2.1",
+    "create-react-class": "^15.6.3",
+    "dayjs": "^1.8.0",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "secp256k1": "^3.7.1"
+  },
+  "devDependencies": {
+    "shadow-cljs": "^2.6.23"
+  },
+  "name": "hello-blockstack-meet-cljs",
+  "description": "",
+  "version": "0.1.0",
+  "author": "",
+  "license": "MIT"
+}

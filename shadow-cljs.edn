@@ -1,0 +1,16 @@
+{:source-paths ["src"]
+ :dependencies [;[binaryage/devtools "0.9.10"]
+                [proto-repl "0.3.1"]
+                [reagent "0.8.1"]]
+ :nrepl {:port 3333}
+ :dev-http {4000 "public"}
+ :builds {:app {:output-dir "public/js"
+                :asset-path "/js"
+                :target :browser
+                :modules {:main {:entries [app.core]}}}}}
+                ; :devtools {;:after-load app.main/reload!
+                ;            :http-root "public"
+                ;            :http-port 5000
+                ;            :push-state {:headers {"Access-Control-Allow-Origin" "*"
+                ;                                   "Access-Control-Allow-Methods" "GET,PUT,POST,DELETE"
+                ;                                   "Access-Control-Allow-Headers" "Cache-Control, Pragma, Origin, Authorization, Content-Type, X-Requested-With"}}}}}}
